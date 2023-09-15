@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>PokeDex</title>
+</head>
+
+<body>
+    <div class="nintendo__leftHandle">
+        <ul class="nintendo__arrowButtons">
+            <li class="nintendo__arrow nintendo__arrow--top"><i class="fa-solid fa-sort-up"></i></li>
+            <li class="nintendo__arrow nintendo__arrow--bottom"><i class="fa-solid fa-sort-down"></i></li>
+            <li class="nintendo__arrow nintendo__arrow--left"><i class="fa-solid fa-caret-left"></i></li>
+            <li class="nintendo__arrow nintendo__arrow--right"><i class="fa-solid fa-caret-right"></i></li>
+        </ul>
+        <div class="nintendo__Joystick"></div>
+        <div class="nintendo__minusButton"></div>
+    </div>
+    <main class="nintendo__screen">
+        <ul class="nintendo__list"></ul>
+        <div class="spinner"></div>
+        <form class="pokemonSearch">
+            <label class="pokemon__searchName">
+                Søg
+                <select>
+                    <option>Pokemon</option>
+                    <option>Abillities</option>
+                </select>
+                <input type="search" name="name" class="pokemon__searchBar" list="pokemons">
+                <datalist id="pokemons">
+                </datalist>
+            </label>
+            <button type="submit" class="pokemon__searchButton">Søg</button>
+        </form>
+    </main>
+    <div class="nintendo__rightHandle">
+        <ul class="nintendo__arrowButtons">
+            <li class="nintendo__arrow nintendo__arrow--top">X</li>
+            <li class="nintendo__arrow nintendo__arrow--bottom">B</li>
+            <li class="nintendo__arrow nintendo__arrow--left">Y</li>
+            <li class="nintendo__arrow nintendo__arrow--right">A</i></li>
+        </ul>
+        <div class="nintendo__Joystick"></div> 
+        <div class="nintendo__plusButton"><i class="fa-solid fa-plus"></i></div>
+    </div>
+    <script src="./Assets/scripts/base.js" defer></script>
+</body>
+
+</html>
